@@ -1,0 +1,164 @@
+@font-face {
+    font-family: "IRANSansWeb";
+    src: url(../assetes/fonts/IRANSansWeb.ttf);
+}
+
+@font-face {
+    font-family: "IRANSansWeb Light";
+    src: url(../assetes/fonts/IRANSansWeb_Light.ttf);
+}
+
+@font-face {
+    font-family: "IRANSansWeb Medium";
+    src: url(../assetes/fonts/IRANSansWeb_Medium.ttf);
+}
+
+@font-face {
+    font-family: "IRANSansWeb Black";
+    src: url(../assetes/fonts/IRANSansWeb_Black.ttf);
+}
+
+@font-face {
+    font-family: "IRANSansWeb UltraLight";
+    src: url(../assetes/fonts/IRANSansWeb_UltraLight.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "IRANSansWeb";
+    width: 100%;
+    background-image: url("../assetes/images/bg-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: rgba(45, 45, 45, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    width: 80%;
+    max-width: 450px;
+}
+
+.box-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 100%;
+    max-width: 150px;
+    margin-bottom: 15px;
+}
+
+.logo-img {
+    width: 100%;
+    max-width: 150px;
+}
+
+h1 {
+    color: #FFCC01;
+    font-weight: 550;
+}
+
+p {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #F5F5F5;
+}
+
+#textInput {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: right;
+    font-family: "IRANSansWeb Medium";
+    width: 100%;
+    margin-top: 20px;
+}
+
+#checkButton {
+    background-color: #FFCC01;
+    color: #F5F5F5;
+    font-size: 16px;
+    font-family: "IRANSansWeb Light";
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#checkButton:hover {
+    background-color: #3D3D3D;
+}
+
+#suggestions {
+    display: none;
+    font-family: "IRANSansWeb UltraLight";
+    margin-top: 20px;
+    font-size: 15px;
+    color: #F5F5F5;
+}
+
+@media only screen and (max-width: 515px) {
+    body {
+        width: 100%;
+        background-image: url("../assetes/images/bg-img520.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+}
+
+
+@media only screen and (max-width: 415px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .logo {
+        width: 100%;
+        max-width: 120px;
+    }
+
+    .logo-img {
+        width: 100%;
+        max-width: 120px;
+    }
+}
+
+@media only screen and (max-width: 365px) {
+    h1 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 337px) {
+    h1 {
+        font-size: 18px;
+    }
+}
